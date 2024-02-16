@@ -42,11 +42,21 @@ const Navbar = () => {
           <div className='text-[17px] flex gap-[30px]'>
             <div className='flex items-center gap-[26px]'>
               <div className='flex gap-14'>
-                <div>Home</div>
-                <div>Pages</div>
-                <div>About</div>
-                <div>Services</div>
-                <div>Contact</div>
+                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                  Home
+                </div>
+                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                  Pages
+                </div>
+                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                  About
+                </div>
+                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                  Services
+                </div>
+                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                  Contact
+                </div>
               </div>
               <div>
                 <img
@@ -56,7 +66,7 @@ const Navbar = () => {
               </div>
             </div>
             <div>
-              <Button buttonText='Order Today' className='h-[65px] w-[220px]' />
+              <Button buttonText='Order Today' className='h-[65px] w-[220px] text-black text-[19px]' />
             </div>
           </div>
         </div>

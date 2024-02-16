@@ -3,6 +3,7 @@ import Hero from '../../components/features/hero';
 import Author from '../../components/features/section1';
 import About from '../../components/features/section2';
 import Trusted from '../../components/features/section3';
+import Callout from '../../components/features/section4';
 
 const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <Author />
       <About />
       <Trusted />
+      <Callout />
     </div>
   );
 };

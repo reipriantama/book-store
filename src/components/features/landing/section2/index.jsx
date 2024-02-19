@@ -10,7 +10,7 @@ const About = () => {
         <div>
           <div>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/section2/authorImage.png`}
+              src={`${process.env.PUBLIC_URL}/assets/landing/section2/authorImage.png`}
               alt='author'
               className='w-[550px] h-[650] shadow-2xl'
             />
@@ -54,7 +54,7 @@ const About = () => {
           <div className='w-[485px] bg-navy-blue py-[15px] px-[18px] flex text-white gap-[37px]'>
             <div>
               <img
-                src={`${process.env.PUBLIC_URL}/assets/section2/imageQr.png`}
+                src={`${process.env.PUBLIC_URL}/assets/landing/section2/imageQr.png`}
                 alt='author'
                 className='size-[130px]'
               />

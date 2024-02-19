@@ -3,28 +3,28 @@ import React from 'react';
 const Trusted = () => {
   const trustedData = [
     {
-      logo: '/assets/section3/amazenLogo.png',
+      logo: '/assets/landing/section3/amazenLogo.png',
       title: 'Amazen Corp',
       description: 'A long established fact that a who looking at its layout.',
       logoWidht: 'w-[95px]',
       logoHeight: 'h-[89px]',
     },
     {
-      logo: '/assets/section3/meganLogo.png',
+      logo: '/assets/landing/section3/meganLogo.png',
       title: 'Megan Books',
       description: 'A long established fact that a who looking at its layout.',
       logoWidht: 'w-[189px]',
       logoHeight: 'h-[75px]',
     },
     {
-      logo: '/assets/section3/losBooksLogo.png',
+      logo: '/assets/landing/section3/losBooksLogo.png',
       title: 'Los Books',
       description: 'A long established fact that a who looking at its layout.',
       logoWidht: 'w-[141px]',
       logoHeight: 'h-[88px]',
     },
     {
-      logo: '/assets/section3/urbanLibsLogo.png',
+      logo: '/assets/landing/section3/urbanLibsLogo.png',
       title: 'Urban Lib',
       description: 'A long established fact that a who looking at its layout.',
       logoWidht: 'w-[100px]',

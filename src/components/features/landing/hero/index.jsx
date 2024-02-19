@@ -27,7 +27,7 @@ const Hero = () => {
         <div className='xl:py-[141px] xl:w-[614px] xl:mr-[95px]'>
           <div className='flex items-center gap-[15px] mb-4 font-cardo italic'>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/hero/iconLine.png`}
+              src={`${process.env.PUBLIC_URL}/assets/landing/hero/iconLine.png`}
               alt='icon'
             />
             Welcome to Pages
@@ -68,7 +68,7 @@ const Hero = () => {
         </div>
         <div>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/hero/imageBook.png`}
+            src={`${process.env.PUBLIC_URL}/assets/landing/hero/imageBook.png`}
             alt='img'
             className='xl:w-[592px] h-[800px]'
           />

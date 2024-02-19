@@ -5,13 +5,13 @@ import Button from '../../../ui/button';
 const Author = () => {
   const authorData = [
     {
-      image: '/assets/section1/atomicBook.png',
+      image: '/assets/landing/section1/atomicBook.png',
       title: `Atomic One's`,
       description:
         'Many variations of passages of Lorem Ipsum willing araise alteration in some form.',
     },
     {
-      image: '/assets/section1/lightBook.png',
+      image: '/assets/landing/section1/lightBook.png',
       title: 'The Dark Light',
       description:
         'Many variations of passages of Lorem Ipsum willing araise alteration in some form.',

@@ -3,19 +3,19 @@ import React from 'react';
 const Blog = () => {
   const blogData = [
     {
-      image: '/assets/section8/articleImage1.png',
+      image: '/assets/landing/section8/articleImage1.png',
       title: 'The energy efficiency offers hydrotherapy or swim',
       description:
         'The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.',
     },
     {
-      image: '/assets/section8/articleImage2.png',
+      image: '/assets/landing/section8/articleImage2.png',
       title: 'Release of Letraset sheets tools containing  passages',
       description:
         'The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.',
     },
     {
-      image: '/assets/section8/articleImage3.png',
+      image: '/assets/landing/section8/articleImage3.png',
       title: 'The energy efficiency offers hydrotherapy or swim',
       description:
         'The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.',
@@ -51,7 +51,7 @@ const Blog = () => {
                 {item.description}
               </div>
               <div className='flex justify-between'>
-                <div className='text-2xl text-navy-blue font-bold font-cardo underline'>
+                <div className='text-2xl font-bold underline text-navy-blue font-cardo'>
                   Read more
                 </div>
                 <div className='text-[17px] text-navy-blue'>

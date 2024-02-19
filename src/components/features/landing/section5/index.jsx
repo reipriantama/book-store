@@ -51,7 +51,7 @@ const Learn = () => {
         </div>
         <div>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/section5/imageReadingBook.png`}
+            src={`${process.env.PUBLIC_URL}/assets/landing/section5/imageReadingBook.png`}
             alt='img'
             className='w-[550px] h-[650px]'
           />

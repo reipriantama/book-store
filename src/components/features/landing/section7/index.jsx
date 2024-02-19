@@ -3,7 +3,7 @@ import React from 'react';
 const Testimonial = () => {
   const testimonialData = [
     {
-      image: '/assets/section7/profilImage1.png',
+      image: '/assets/landing/section7/profilImage1.png',
       name: 'Martin Philips',
       rating: 4,
       title: `“ Awesome Impact ”`,
@@ -11,7 +11,7 @@ const Testimonial = () => {
         'All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value.',
     },
     {
-      image: '/assets/section7/profilImage2.png',
+      image: '/assets/landing/section7/profilImage2.png',
       name: 'James Anderson',
       rating: 3,
       title: `“ Mind Blowing Words ”`,
@@ -43,7 +43,7 @@ const Testimonial = () => {
               {[...Array(5)].map((_, index) => (
                 <img
                   key={index}
-                  src={`${process.env.PUBLIC_URL}/assets/section7/iconDot.png`}
+                  src={`${process.env.PUBLIC_URL}/assets/landing/section7/iconDot.png`}
                   alt='icon'
                 />
               ))}
@@ -76,7 +76,7 @@ const Testimonial = () => {
                     {[...Array(item.rating)].map((rate, index) => (
                       <img
                         key={`rate-${index + 1}`}
-                        src={`${process.env.PUBLIC_URL}/assets/section7/iconDot.png`}
+                        src={`${process.env.PUBLIC_URL}/assets/landing/section7/iconDot.png`}
                         alt='icon'
                       />
                     ))}
@@ -100,7 +100,7 @@ const Testimonial = () => {
               <div className='flex gap-5 mb-[22px]'>
                 <div>
                   <img
-                    src={`${process.env.PUBLIC_URL}/assets/section7/profilImage3.png`}
+                    src={`${process.env.PUBLIC_URL}/assets/landing/section7/profilImage3.png`}
                     alt='profile'
                     className='size-[85px]'
                   />
@@ -111,7 +111,7 @@ const Testimonial = () => {
                     {[...Array(5)].map((_, index) => (
                       <img
                         key={index}
-                        src={`${process.env.PUBLIC_URL}/assets/section7/iconDot.png`}
+                        src={`${process.env.PUBLIC_URL}/assets/landing/section7/iconDot.png`}
                         alt='icon'
                       />
                     ))}

@@ -28,7 +28,7 @@ const Callout = () => {
         </div>
         <div>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/section4/imageBook.png`}
+            src={`${process.env.PUBLIC_URL}/assets/landing/section4/imageBook.png`}
             alt='img'
             className='w-[640px] h-[427px]'
           />

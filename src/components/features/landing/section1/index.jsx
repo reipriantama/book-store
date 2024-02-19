@@ -2,7 +2,7 @@ import React from 'react';
 import { FaCircle } from 'react-icons/fa';
 import Button from '../../../ui/button';
 
-const Author = () => {
+const Author = ({ className }) => {
   const authorData = [
     {
       image: '/assets/landing/section1/atomicBook.png',
@@ -19,12 +19,9 @@ const Author = () => {
   ];
 
   return (
-    <div
-      className='font-inter 
-      xl:px-[310px] xl:py-[145px]'
-    >
+    <div className={`font-inter xl:px-[310px] xl:py-[145px] ${className}`}>
       <div className='flex flex-col items-center'>
-        <div className='font-cardo text-[45px] text-navy-blue mb-[22px]'>
+        <div className='font-cardo font-bold text-[45px] text-navy-blue mb-[22px]'>
           Author’s Book Includes
         </div>
         <div className='border-b-[3px] w-[55px] border-dark-yellow'></div>

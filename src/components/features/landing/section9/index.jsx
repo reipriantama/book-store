@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../ui/button';
+import Button from '../../../ui/button';
 
 const ReadChapter = () => {
   return (
@@ -7,14 +7,14 @@ const ReadChapter = () => {
       className='font-inter 
     xl:px-[310px] xl:py-[145px]'
     >
-      <div className='bg-[#FFCA42] py-[121px] px-[230px]'>
+      <div className='bg-dark-yellow py-[121px] px-[230px]'>
         <div className='flex flex-col items-center gap-[17px] mb-[20px]'>
-          <div className='font-bold font-cardo text-[#1B3764] text-[45px]'>
+          <div className='font-bold font-cardo text-navy-blue text-[45px]'>
             Read a free chapter
           </div>
-          <div className='w-[55px] border-t-[3px] border-[#1B3764]'></div>
+          <div className='w-[55px] border-t-[3px] border-navy-blue'></div>
         </div>
-        <div className='text-[19px] text-center text-[#1B3764] mb-[38px]'>
+        <div className='text-[19px] text-center text-navy-blue mb-[38px]'>
           Making this the first true value generator on the Internet. It of over
           200 Latin words, combined with a handful.
         </div>
@@ -26,7 +26,7 @@ const ReadChapter = () => {
           />
           <Button
             buttonText='Subscribe'
-            className='px-[103px] h-[65px] bg-[#1B3764] text-white'
+            className='px-[103px] h-[65px] bg-navy-blue text-white'
           />
         </div>
       </div>

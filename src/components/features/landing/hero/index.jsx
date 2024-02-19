@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../ui/button';
+import Button from '../../../ui/button';
 import { FaCircle } from 'react-icons/fa';
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <div
-      className='font-inter bg-[#1B3764] text-white
+      className='font-inter bg-navy-blue text-white
     xl:px-[310px] xl:pb-[95px] mt-[-1px]'
     >
       <div className='flex'>
@@ -45,7 +45,7 @@ const Hero = () => {
             <div>
               <Button
                 buttonText='Order Today'
-                className='text-black bg-[#FFCA42]'
+                className='text-black bg-dark-yellow'
               />
             </div>
             <div className='flex items-center underline font-cardo text-[19px]'>
@@ -55,7 +55,7 @@ const Hero = () => {
           <div className='flex gap-[80px] font-cardo text-xl'>
             {itemHero.map((item, index) => (
               <div key={index} className='flex gap-[13px]'>
-                <FaCircle className='text-[#FFCA42]' />
+                <FaCircle className='text-dark-yellow' />
                 <div>
                   <div>{item.title}</div>
                   <div className='text-lg font-inter text-[#B4C7E7]'>

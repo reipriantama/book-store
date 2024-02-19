@@ -27,12 +27,12 @@ const Testimonial = () => {
     >
       <div className='w-[418px]  flex flex-col justify-center mr-[111px]'>
         <div>
-          <div className='font-bold font-cardo text-[45px] text-[#1B3764] mb-[27px]'>
+          <div className='font-bold font-cardo text-[45px] text-navy-blue mb-[27px]'>
             What Readers Say About the Book
           </div>
-          <div className='border-t-[3px] border-[#FFCA42] w-[49px] mb-[29px]'></div>
+          <div className='border-t-[3px] border-dark-yellow w-[49px] mb-[29px]'></div>
         </div>
-        <div className='text-[19px] text-[#969AA0] mb-[43px]'>
+        <div className='text-[19px] text-thin-grey mb-[43px]'>
           If you are going to use a passage of Lorem Ipsum, you need to be sure
           there isn't anything embarrassing hidden in the middle of text. All
           the Lorem Ipsum generators.
@@ -50,7 +50,7 @@ const Testimonial = () => {
             </div>
             <div> (4.8/5) </div>
           </div>
-          <div className='text-[19px] text-[#1B3764]'>
+          <div className='text-[19px] text-navy-blue'>
             Overall Customer Ratings
           </div>
         </div>
@@ -60,7 +60,7 @@ const Testimonial = () => {
           {testimonialData.map((item, index) => (
             <div
               key={index}
-              className='w-[370px] h-[309px] bg-[#1B3764] px-[31px] py-[36px] text-white'
+              className='w-[370px] h-[309px] bg-navy-blue px-[31px] py-[36px] text-white'
             >
               <div className='flex gap-5 mb-[22px]'>
                 <div>
@@ -96,7 +96,7 @@ const Testimonial = () => {
         </div>
         <div className='h-[649px] flex flex-col justify-center'>
           <div className='flex flex-col gap-[31px]'>
-            <div className='w-[370px] h-[309px] bg-[#1B3764] px-[31px] py-[36px] text-white'>
+            <div className='w-[370px] h-[309px] bg-navy-blue px-[31px] py-[36px] text-white'>
               <div className='flex gap-5 mb-[22px]'>
                 <div>
                   <img

@@ -3,10 +3,10 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      color: {
+      colors: {
         'navy-blue': '#1B3764',
         'dark-yellow': '#FFCA42',
-        'thin-grey': '#F6F8FC',
+        'thin-grey': '#969AA0',
       },
     },
     fontFamily: {

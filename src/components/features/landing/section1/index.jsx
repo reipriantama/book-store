@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCircle } from 'react-icons/fa';
-import Button from '../../ui/button';
+import Button from '../../../ui/button';
 
 const Author = () => {
   const authorData = [
@@ -24,10 +24,10 @@ const Author = () => {
       xl:px-[310px] xl:py-[145px]'
     >
       <div className='flex flex-col items-center'>
-        <div className='font-cardo text-[45px] text-[#1B3764] mb-[22px]'>
+        <div className='font-cardo text-[45px] text-navy-blue mb-[22px]'>
           Author’s Book Includes
         </div>
-        <div className='border-b-[3px] w-[55px] border-[#FFCA42]'></div>
+        <div className='border-b-[3px] w-[55px] border-dark-yellow'></div>
       </div>
       <div className='flex justify-center gap-[66px] mt-[57px]'>
         {authorData.map((item, index) => (
@@ -41,16 +41,16 @@ const Author = () => {
             </div>
             <div className='flex flex-col justify-center gap-[30px]'>
               <div>
-                <div className='text-[#1B3764] text-[32px] font-cardo font-bold mb-[14px]'>
+                <div className='text-navy-blue text-[32px] font-cardo font-bold mb-[14px]'>
                   {item.title}
                 </div>
-                <div className='text-[#969AA0] text-[19px] w-[262px]'>
+                <div className='text-thin-grey text-[19px] w-[262px]'>
                   {item.description}
                 </div>
               </div>
               <div className='flex justify-between'>
                 <div className='flex gap-[13px]'>
-                  <FaCircle className='text-[#FFCA42]' />
+                  <FaCircle className='text-dark-yellow' />
                   <div>
                     <div>Pages:</div>
                     <div className='text-lg font-inter text-[#B4C7E7]'>
@@ -59,7 +59,7 @@ const Author = () => {
                   </div>
                 </div>
                 <div className='flex gap-[13px]'>
-                  <FaCircle className='text-[#FFCA42]' />
+                  <FaCircle className='text-dark-yellow' />
                   <div>
                     <div>Length:</div>
                     <div className='text-lg font-inter text-[#B4C7E7]'>
@@ -71,7 +71,7 @@ const Author = () => {
               <div>
                 <Button
                   buttonText='Order Today'
-                  className='border-[1px] border-[#FFCA42] bg-white'
+                  className='border-[1px] border-dark-yellow bg-white'
                 />
               </div>
             </div>

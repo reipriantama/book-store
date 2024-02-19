@@ -30,19 +30,19 @@ const Learn = () => {
     xl:px-[310px] xl:py-[145px]'
     >
       <div className='flex flex-col items-center gap-[22px] mb-[53px]'>
-        <div className='font-bold font-cardo text-[45px] text-[#1B3764]'>
+        <div className='font-bold font-cardo text-[45px] text-navy-blue'>
           What will you learn?
         </div>
-        <div className='border-t-[3px] border-[#FFCA42] w-[55px]'></div>
+        <div className='border-t-[3px] border-dark-yellow w-[55px]'></div>
       </div>
       <div className='flex gap-[99px]'>
         <div className='grid grid-cols-2 gap-[30px] py-[30px]'>
           {cardData.map((item, index) => (
             <div
               key={index}
-              className='size-[290px] px-[33px] py-[41px] bg-[#F4F8FF] font-bold font-cardo text-2xl text-[#1B3764]'
+              className='size-[290px] px-[33px] py-[41px] bg-[#F4F8FF] font-bold font-cardo text-2xl text-navy-blue'
             >
-              <div className='flex justify-center items-center rounded-full bg-[#FFCA42] size-[50px] mb-[31px]'>
+              <div className='flex justify-center items-center rounded-full bg-dark-yellow size-[50px] mb-[31px]'>
                 {item.number}
               </div>
               <div className=''>{item.description}</div>

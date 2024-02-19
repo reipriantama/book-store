@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <div
       className='font-inter bg-[#1B3764] text-white
-    xl:px-[310px] xl:pb-[95px] '
+    xl:px-[310px] xl:pb-[95px] mt-[-1px]'
     >
       <div className='flex'>
         <div className='xl:py-[141px] xl:w-[614px] xl:mr-[95px]'>

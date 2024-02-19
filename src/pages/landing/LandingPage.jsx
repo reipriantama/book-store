@@ -7,6 +7,7 @@ import Callout from '../../components/features/section4';
 import Learn from '../../components/features/section5';
 import Chapter from '../../components/features/section6';
 import Testimonial from '../../components/features/section7';
+import Blog from '../../components/features/section8';
 
 const LandingPage = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPage = () => {
       <Learn />
       <Chapter />
       <Testimonial />
+      <Blog />
     </div>
   );
 };

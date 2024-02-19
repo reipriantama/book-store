@@ -8,6 +8,7 @@ import Learn from '../../components/features/section5';
 import Chapter from '../../components/features/section6';
 import Testimonial from '../../components/features/section7';
 import Blog from '../../components/features/section8';
+import ReadChapter from '../../components/features/section9';
 
 const LandingPage = () => {
   return (
@@ -21,6 +22,7 @@ const LandingPage = () => {
       <Chapter />
       <Testimonial />
       <Blog />
+      <ReadChapter />
     </div>
   );
 };

@@ -74,7 +74,7 @@ const Chapter = () => {
         <div>
           <Button
             buttonText='Start a 15-Days Free Trail'
-            className='text-[#1B3764] font-cardo font-bold text-[19px]'
+            className='text-[#1B3764] font-cardo font-bold text-[19px] bg-[#FFCA42]'
           />
         </div>
         <div className='text-[#969AA0] w-[318px] text-center'>

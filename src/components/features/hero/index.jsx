@@ -43,7 +43,10 @@ const Hero = () => {
           </div>
           <div className='flex gap-[37px] xl:mb-[49px]'>
             <div>
-              <Button buttonText='Order Today' className='text-black' />
+              <Button
+                buttonText='Order Today'
+                className='text-black bg-[#FFCA42]'
+              />
             </div>
             <div className='flex items-center underline font-cardo text-[19px]'>
               Read Free Demo

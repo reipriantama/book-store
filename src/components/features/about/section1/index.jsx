@@ -25,7 +25,7 @@ const AboutAuthor = () => {
   return (
     <div
       className='font-inter bg-[#F4F8FF]
-    xl:px-[303px] xl:py-[151px]'
+    xl:px-[310px] xl:py-[151px]'
     >
       <div className='mb-[80px]'>
         <img

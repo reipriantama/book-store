@@ -66,7 +66,10 @@ const Navbar = () => {
               </div>
             </div>
             <div>
-              <Button buttonText='Order Today' className='h-[65px] w-[220px] text-black text-[19px]' />
+              <Button
+                buttonText='Order Today'
+                className='h-[65px] w-[220px] text-black text-[19px] bg-[#FFCA42]'
+              />
             </div>
           </div>
         </div>

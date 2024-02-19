@@ -28,10 +28,10 @@ const Blog = () => {
     xl:px-[310px] xl:py-[145px]'
     >
       <div className='flex flex-col items-center gap-[22px] mb-[50px]'>
-        <div className='font-bold font-cardo text-[#1B3764] text-[45px]'>
+        <div className='font-bold font-cardo text-navy-blue text-[45px]'>
           Articles & Resources
         </div>
-        <div className='w-[55px] border-t-[3px] border-[#FFCA42]'></div>
+        <div className='w-[55px] border-t-[3px] border-dark-yellow'></div>
       </div>
       <div className='flex gap-[35px]'>
         {blogData.map((item, index) => (
@@ -44,17 +44,17 @@ const Blog = () => {
               />
             </div>
             <div className='px-[31px] py-[27px]'>
-              <div className='text-2xl text-[#1B3764] font-bold font-cardo mb-[14px]'>
+              <div className='text-2xl text-navy-blue font-bold font-cardo mb-[14px]'>
                 {item.title}
               </div>
-              <div className='text-[19px] text-[#969AA0] mb-[27px]'>
+              <div className='text-[19px] text-thin-grey mb-[27px]'>
                 {item.description}
               </div>
               <div className='flex justify-between'>
-                <div className='text-2xl text-[#1B3764] font-bold font-cardo underline'>
+                <div className='text-2xl text-navy-blue font-bold font-cardo underline'>
                   Read more
                 </div>
-                <div className='text-[17px] text-[#1B3764]'>
+                <div className='text-[17px] text-navy-blue'>
                   Author - 23.05.2022
                 </div>
               </div>

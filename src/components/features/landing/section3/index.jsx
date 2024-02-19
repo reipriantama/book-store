@@ -38,10 +38,10 @@ const Trusted = () => {
     xl:px-[310px] xl:py-[131px]'
     >
       <div className='flex flex-col items-center mb-10'>
-        <div className='text-[45px] text-[#1B3764] font-cardo font-bold mb-[22px]'>
+        <div className='text-[45px] text-navy-blue font-cardo font-bold mb-[22px]'>
           Trusted by the Best
         </div>
-        <div className='w-[55px] border-b-[3px] border-[#FFCA42]'></div>
+        <div className='w-[55px] border-b-[3px] border-dark-yellow'></div>
       </div>
       <div className='flex gap-[97px]'>
         {trustedData.map((item, index) => (
@@ -53,10 +53,10 @@ const Trusted = () => {
                 className={`${item.logoHeight} ${item.logoWidht}`}
               />
             </div>
-            <div className='font-bold font-cardo text-[#1B3764] text-2xl mb-[10px]'>
+            <div className='font-bold font-cardo text-navy-blue text-2xl mb-[10px]'>
               {item.title}
             </div>
-            <div className='text-[#969AA0] text-[18px] text-center'>
+            <div className='text-thin-grey text-[18px] text-center'>
               {item.description}
             </div>
           </div>

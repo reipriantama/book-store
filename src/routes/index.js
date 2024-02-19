@@ -2,7 +2,7 @@ import { Navigate } from 'react-router';
 
 import Base from '../pages/base';
 import LandingPage from '../pages/landing/LandingPage';
-import AboutPage from '../pages/about/AboutPage';
+import AboutPage from '../pages/aboutPage/AboutPage';
 
 const routes = [
   {

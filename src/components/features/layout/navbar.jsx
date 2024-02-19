@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className='font-inter bg-[#1B3764] text-white
+        className='font-inter bg-navy-blue text-white
        xl:px-[310px] xl:pt-[40px] xl:pb-[95px] '
       >
         <div className='flex justify-between '>
@@ -42,19 +42,19 @@ const Navbar = () => {
           <div className='text-[17px] flex gap-[30px]'>
             <div className='flex items-center gap-[26px]'>
               <div className='flex gap-14'>
-                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
                   Home
                 </div>
-                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
                   Pages
                 </div>
-                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
                   About
                 </div>
-                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
                   Services
                 </div>
-                <div className='hover:bg-[#FFCA42] rounded-full p-[10px] cursor-pointer'>
+                <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
                   Contact
                 </div>
               </div>
@@ -68,7 +68,7 @@ const Navbar = () => {
             <div>
               <Button
                 buttonText='Order Today'
-                className='h-[65px] w-[220px] text-black text-[19px] bg-[#FFCA42]'
+                className='h-[65px] w-[220px] text-black text-[19px] bg-dark-yellow'
               />
             </div>
           </div>

@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className='font-inter bg-[#1B3764] text-white
+        className='font-inter bg-navy-blue text-white
        xl:px-[310px] xl:pt-[80px] xl:pb-[23px]'
       >
         <div className='flex'>
@@ -46,27 +46,27 @@ const Footer = () => {
             <div className='xl:mb-[23px] font-cardo text-2xl'>Explore</div>
             <ul className='text-[#B4C7E7]'>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Home
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 About Us
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Services
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Appointments
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Blog
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Contact Us
               </li>
             </ul>
@@ -77,27 +77,27 @@ const Footer = () => {
             </div>
             <ul className='text-[#B4C7E7]'>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Start here
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Style guide
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 404 not found
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Password protected
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Licenses
               </li>
               <li className='flex items-center gap-[18px]'>
-                <PiDotsThreeOutlineBold className='text-[#FFCA42] size-5' />
+                <PiDotsThreeOutlineBold className='text-dark-yellow size-5' />
                 Changelog
               </li>
             </ul>

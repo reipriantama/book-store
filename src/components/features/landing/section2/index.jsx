@@ -21,9 +21,9 @@ const About = () => {
             <div className='font-cardo text-[45px] font-bold mb-[22px]'>
               About Author
             </div>
-            <div className='border-b-[3px] border-[#FFCA42] w-[55px]'></div>
+            <div className='border-b-[3px] border-dark-yellow w-[55px]'></div>
           </div>
-          <div className='text-[19px] text-[#969AA0]'>
+          <div className='text-[19px] text-thin-grey'>
             All the Lorem Ipsum generators on the Internet tend to repeated
             predefined chunks as necessary, making this the first true value
             generator on the Internet. It uses a dictionary of over 200 Latin
@@ -31,27 +31,27 @@ const About = () => {
           </div>
           <div className='flex gap-8'>
             <div>
-              <div className='font-cardo font-bold text-[55px] text-[#1B3764]'>
+              <div className='font-cardo font-bold text-[55px] text-navy-blue'>
                 02
               </div>
-              <div className='text-[18px] text-[#969AA0]'>Books Published</div>
+              <div className='text-[18px] text-thin-grey'>Books Published</div>
             </div>
-            <div className='border-l-[1px] border-[#FFCA42] pl-[36px]'>
-              <div className='font-cardo font-bold text-[55px] text-[#1B3764]'>
+            <div className='border-l-[1px] border-dark-yellow pl-[36px]'>
+              <div className='font-cardo font-bold text-[55px] text-navy-blue'>
                 4.5
               </div>
-              <div className='text-[18px] text-[#969AA0]'>User Reviews</div>
+              <div className='text-[18px] text-thin-grey'>User Reviews</div>
             </div>
-            <div className='border-l-[1px] border-[#FFCA42] pl-[36px]'>
-              <div className='font-cardo font-bold text-[55px] text-[#1B3764]'>
+            <div className='border-l-[1px] border-dark-yellow pl-[36px]'>
+              <div className='font-cardo font-bold text-[55px] text-navy-blue'>
                 04
               </div>
-              <div className='text-[18px] text-[#969AA0]'>
+              <div className='text-[18px] text-thin-grey'>
                 Best Seller Awards
               </div>
             </div>
           </div>
-          <div className='w-[485px] bg-[#1B3764] py-[15px] px-[18px] flex text-white gap-[37px]'>
+          <div className='w-[485px] bg-navy-blue py-[15px] px-[18px] flex text-white gap-[37px]'>
             <div>
               <img
                 src={`${process.env.PUBLIC_URL}/assets/section2/imageQr.png`}
@@ -60,7 +60,7 @@ const About = () => {
               />
             </div>
             <div className='flex flex-col justify-center text-[19px] text-[#B4C7E7]'>
-              <div className='text-[22px] text-[#FFCA42] font-bold font-cardo'>
+              <div className='text-[22px] text-dark-yellow font-bold font-cardo'>
                 John Abraham , Ph.d
               </div>
               <div>Mail : johnabraham@gmail.com</div>

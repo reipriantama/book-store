@@ -4,10 +4,10 @@ import Base from '../pages/base';
 import LandingPage from '../pages/landing/LandingPage';
 import AboutPage from '../pages/aboutPage/AboutPage';
 import StorePage from '../pages/storePage/StorePage';
-import SingleProduct from '../pages/singleProduct/singleProduct';
 import ContactPage from '../pages/contactPage/ContactPage';
 import BlogPage from '../pages/blogPage/BlogPage';
 import BlogSinglePage from '../pages/blogSinglePage/BlogSinglePage';
+import DetailProduct from '../pages/detailProductPage/DetailProduct';
 
 const routes = [
   {
@@ -50,7 +50,7 @@ const routes = [
     children: [
       {
         path: '',
-        element: <SingleProduct />,
+        element: <DetailProduct />,
       },
     ],
   },

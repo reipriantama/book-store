@@ -2,6 +2,7 @@ import React from 'react';
 import TitleHero from '../../components/ui/titleHero';
 import DetailBook from '../../components/features/detailProduct/section1';
 import ProductDescription from '../../components/features/detailProduct/section2';
+import Features from '../../components/features/detailProduct/section3';
 
 const DetailProduct = () => {
   return (
@@ -12,6 +13,7 @@ const DetailProduct = () => {
       />
       <DetailBook />
       <ProductDescription />
+      <Features />
     </div>
   );
 };

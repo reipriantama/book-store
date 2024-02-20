@@ -12,9 +12,9 @@ const Faq = () => {
         </div>
         <div className='w-[55px] border-t-[3px] border-dark-yellow mb-[27px]'></div>
       </div>
-          <div className='flex '>
-              <div>left</div>
-              <div>right</div>
+      <div className='flex '>
+        <div>left</div>
+        <div>right</div>
       </div>
     </div>
   );

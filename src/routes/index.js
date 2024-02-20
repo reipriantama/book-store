@@ -4,7 +4,7 @@ import Base from '../pages/base';
 import LandingPage from '../pages/landing/LandingPage';
 import AboutPage from '../pages/aboutPage/AboutPage';
 import StorePage from '../pages/storePage/StorePage';
-import SingleProduct from '../pages/singleProduct/SingleProduct';
+import SingleProduct from '../pages/singleProduct/singleProduct';
 import ContactPage from '../pages/contactPage/ContactPage';
 import BlogPage from '../pages/blogPage/BlogPage';
 import BlogSinglePage from '../pages/blogSinglePage/BlogSinglePage';
@@ -12,10 +12,10 @@ import BlogSinglePage from '../pages/blogSinglePage/BlogSinglePage';
 const routes = [
   {
     path: '',
-    element: <Navigate to='/landing-page' />,
+    element: <Navigate to='/home-page' />,
   },
   {
-    path: 'landing-page',
+    path: 'home-page',
     element: <Base />,
     children: [
       {
@@ -45,7 +45,7 @@ const routes = [
     ],
   },
   {
-    path: 'single-product-page',
+    path: 'detail-product-page',
     element: <Base />,
     children: [
       {

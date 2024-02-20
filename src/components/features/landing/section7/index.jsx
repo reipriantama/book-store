@@ -94,6 +94,8 @@ const Testimonial = () => {
             </div>
           ))}
         </div>
+
+        {/* maping split */}
         <div className='h-[649px] flex flex-col justify-center'>
           <div className='flex flex-col gap-[31px]'>
             <div className='w-[370px] h-[309px] bg-navy-blue px-[31px] py-[36px] text-white'>

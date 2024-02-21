@@ -6,7 +6,7 @@ import AboutPage from '../pages/aboutPage/AboutPage';
 import StorePage from '../pages/storePage/StorePage';
 import ContactPage from '../pages/contactPage/ContactPage';
 import BlogPage from '../pages/blogPage/BlogPage';
-import BlogSinglePage from '../pages/blogSinglePage/BlogSinglePage';
+import DetailBlogPage from '../pages/detailBlogPage/DetailBlogPage';
 import DetailProduct from '../pages/detailProductPage/DetailProduct';
 
 const routes = [
@@ -75,12 +75,12 @@ const routes = [
     ],
   },
   {
-    path: 'blog-single-page',
+    path: 'detail-blog-page',
     element: <Base />,
     children: [
       {
         path: '',
-        element: <BlogSinglePage />,
+        element: <DetailBlogPage />,
       },
     ],
   },

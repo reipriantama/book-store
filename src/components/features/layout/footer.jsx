@@ -23,7 +23,7 @@ const Footer = () => {
         className='font-inter bg-navy-blue text-white
        xl:px-[310px] xl:pt-[80px] xl:pb-[23px]'
       >
-        <div className='flex justify-between'>
+        <div className='flex '>
           <div className='xl:mr-[110px]'>
             <div className='mb-[27px]'>
               <img
@@ -71,7 +71,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className='xl:mr-[65px]'>
+          <div className='xl:mr-[65px] xl:w-[200px]'>
             <div className='xl:mb-[23px] font-cardo text-2xl'>
               Utility Pages
             </div>

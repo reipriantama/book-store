@@ -7,7 +7,9 @@ const TitleHero = ({ titleText, descText, className }) => {
     xl:px-[310px] xl:pb-[95px] mt-[-1px] flex flex-col items-center'
     >
       <div className='flex flex-col items-center gap-[22px] mb-[50px]'>
-        <div className={`font-bold font-cardo text-white text-[45px] ${className}`}>
+        <div
+          className={`font-bold font-cardo text-white text-[45px] ${className}`}
+        >
           {titleText}
         </div>
         <div className='w-[55px] border-t-[3px] border-dark-yellow'></div>

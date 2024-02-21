@@ -1,6 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 const BlogList = () => {
+  const navigate = useNavigate();
+
+  const navigateToDetail = () => {
+    navigate('/detail-blog');
+  };
+
   const dataBlog = [
     {
       image: '/assets/blog/section1/imageBlog1.png',
@@ -82,7 +89,10 @@ const BlogList = () => {
               {item.description}
             </div>
             <div className='flex justify-between'>
-              <div className='font-bold font-cardo text-[18px] cursor-pointer text-navy-blue underline underline-offset-8'>
+              <div
+                className='font-bold font-cardo text-[18px] cursor-pointer text-navy-blue underline underline-offset-8'
+                onClick={() => navigateToDetail()}
+              >
                 Read more
               </div>
               <div className='text-navy-blue text-[17px]'>

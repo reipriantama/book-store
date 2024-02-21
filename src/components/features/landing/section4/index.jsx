@@ -1,7 +1,14 @@
 import React from 'react';
 import Button from '../../../ui/button';
+import { useNavigate } from 'react-router';
 
 const Callout = () => {
+  const navigate = useNavigate();
+
+  const navigateToStore = () => {
+    navigate('/store');
+  };
+
   return (
     <div
       className='font-inter bg-navy-blue text-white
@@ -23,6 +30,7 @@ const Callout = () => {
             <Button
               buttonText='Oreder Today'
               className='border-[1px] border-dark-yellow bg-transparent '
+              onClick={() => navigateToStore()}
             />
           </div>
         </div>

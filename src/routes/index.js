@@ -1,5 +1,3 @@
-import { Navigate } from 'react-router';
-
 import Base from '../pages/base';
 import LandingPage from '../pages/landing/LandingPage';
 import AboutPage from '../pages/aboutPage/AboutPage';
@@ -12,74 +10,34 @@ import DetailProduct from '../pages/detailProductPage/DetailProduct';
 const routes = [
   {
     path: '',
-    element: <Navigate to='/home-page' />,
-  },
-  {
-    path: 'home-page',
     element: <Base />,
     children: [
       {
         path: '',
         element: <LandingPage />,
       },
-    ],
-  },
-  {
-    path: 'about-page',
-    element: <Base />,
-    children: [
       {
-        path: '',
+        path: 'about',
         element: <AboutPage />,
       },
-    ],
-  },
-  {
-    path: 'store-page',
-    element: <Base />,
-    children: [
       {
-        path: '',
+        path: 'store',
         element: <StorePage />,
       },
-    ],
-  },
-  {
-    path: 'detail-product-page',
-    element: <Base />,
-    children: [
       {
-        path: '',
+        path: 'detail-product',
         element: <DetailProduct />,
       },
-    ],
-  },
-  {
-    path: 'contact-page',
-    element: <Base />,
-    children: [
       {
-        path: '',
+        path: 'contact',
         element: <ContactPage />,
       },
-    ],
-  },
-  {
-    path: 'blog-page',
-    element: <Base />,
-    children: [
       {
-        path: '',
+        path: 'blog',
         element: <BlogPage />,
       },
-    ],
-  },
-  {
-    path: 'detail-blog-page',
-    element: <Base />,
-    children: [
       {
-        path: '',
+        path: 'detail-blog',
         element: <DetailBlogPage />,
       },
     ],

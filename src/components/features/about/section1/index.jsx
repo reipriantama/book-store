@@ -1,8 +1,15 @@
 import React from 'react';
 import Button from '../../../ui/button';
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { useNavigate } from 'react-router';
 
 const AboutAuthor = () => {
+  const navigate = useNavigate();
+
+  const navigateToContact = () => {
+    navigate('/contact');
+  };
+
   const cardData = [
     {
       name: 'Country :',
@@ -43,8 +50,10 @@ const AboutAuthor = () => {
                   {item.name}
                 </div>
               </div>
-              <div className='w-[162px] '>
-                <div className='text-[19px] text-thin-grey'>{item.value}</div>
+              <div className='w-[162px]'>
+                <div className='pt-1 text-[19px] text-thin-grey'>
+                  {item.value}
+                </div>
               </div>
             </div>
           ))}
@@ -55,7 +64,7 @@ const AboutAuthor = () => {
               </div>
             </div>
             <div className='w-[162px] '>
-              <div className='flex gap-[22px] text-[19px] text-navy-blue'>
+              <div className='pt-1 flex gap-[22px] text-[19px] text-navy-blue'>
                 <FaFacebookF /> <FaTwitter /> <FaLinkedinIn />
               </div>
             </div>
@@ -75,7 +84,11 @@ const AboutAuthor = () => {
             can combined with a handful of model sentence structures.
           </div>
           <div>
-            <Button buttonText='Contact now' className='bg-dark-yellow' />
+            <Button
+              buttonText='Contact now'
+              className='bg-dark-yellow'
+              onClick={() => navigateToContact()}
+            />
           </div>
         </div>
       </div>

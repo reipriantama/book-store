@@ -1,7 +1,10 @@
 import React from 'react';
 import Button from '../../ui/button';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   const iconMediaSocial = [
     {
       icon: '/assets/navbar/iconFacebook.png',
@@ -13,6 +16,10 @@ const Navbar = () => {
       icon: '/assets/navbar/iconLinkedIn.png',
     },
   ];
+
+  const navigateToPages = () => {
+    navigate('/store');
+  };
 
   return (
     <div>
@@ -43,19 +50,19 @@ const Navbar = () => {
             <div className='flex items-center gap-[26px]'>
               <div className='flex gap-14'>
                 <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
-                  Home
+                  <Link to='/'>Home</Link>
                 </div>
                 <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
-                  Pages
+                  <Link to='/store'>Pages</Link>
                 </div>
                 <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
-                  About
+                  <Link to='/about'>About</Link>
                 </div>
                 <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
-                  Services
+                  <Link to='/blog'>Services</Link>
                 </div>
                 <div className='hover:bg-dark-yellow rounded-full p-[10px] cursor-pointer'>
-                  Contact
+                  <Link to='/contact'>Contact</Link>
                 </div>
               </div>
               <div>
@@ -69,6 +76,7 @@ const Navbar = () => {
               <Button
                 buttonText='Order Today'
                 className='h-[65px] w-[220px] text-black text-[19px] bg-dark-yellow'
+                onClick={() => navigateToPages()}
               />
             </div>
           </div>

@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../../../ui/button';
 import { PiShoppingCartSimple } from 'react-icons/pi';
+import { IoMdClose } from 'react-icons/io';
 
 const DetailBook = () => {
+  const [showCartModal, setShowCartModal] = useState(false);
+
+  const closeModal = () => {
+    setShowCartModal(false);
+  };
+
   return (
-    <div
-      className='font-inter 
-      xl:px-[310px] xl:pt-[150px] xl:pb-[120px] flex justify-center'
-    >
+    <div className='font-inter xl:px-[310px] xl:pt-[150px] xl:pb-[120px] flex justify-center'>
       <div className='mr-[86px]'>
         <img
           src={`${process.env.PUBLIC_URL}/assets/store/section1/atomicBook.png`}
@@ -53,9 +57,74 @@ const DetailBook = () => {
             buttonText='Add to Cart'
             className='flex items-center gap-3 bg-dark-yellow text-navy-blue'
             iconButton={<PiShoppingCartSimple />}
+            onClick={() => setShowCartModal(true)}
           />
         </div>
       </div>
+
+      {showCartModal && (
+        <div className='fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50'>
+          <div className='w-full max-w-[801px] bg-white text-navy-blue'>
+            <div className='bg-dark-yellow  mb-[62px] px-[76px] py-[35px] flex justify-between items-center'>
+              <div className='font-cardo font-bold  text-[50px]'>Your Cart</div>
+              <IoMdClose
+                onClick={() => closeModal()}
+                className='cursor-pointer size-10'
+              />
+            </div>
+
+            <div className='flex justify-between px-[76px]'>
+              <div className='flex'>
+                <img
+                  src={`${process.env.PUBLIC_URL}/assets/store/section1/atomicBook.png`}
+                  alt='book'
+                  className='w-[133px] h-[178px] mr-[38px]'
+                />
+                <div>
+                  <div className='font-bold font-cardo text-[24px]'>
+                    Atomic One’s
+                  </div>
+                  <div className='text-thin-grey text-[20px] mb-[44px]'>
+                    $30.00 USD
+                  </div>
+                  <div className='font-bold font-cardo text-[35px]'>Remove</div>
+                </div>
+              </div>
+              <input
+                type='number'
+                className='border-[1px] border-[#E8E8E8] w-[120px] h-[62px] text-thin-grey text-[20px] '
+              />
+            </div>
+            <div className='border-t-[1px] border-navy-blue mt-[65px] mb-[25px]'></div>
+            <div className='flex justify-between px-[71px]'>
+              <div className='font-bold font-cardo text-navy-blue text-[24px]'>
+                Sub-Total
+              </div>
+              <div className='font-bold text-navy-blue text-[24px]'>
+                $ 60.00 USD
+              </div>
+            </div>
+            <div className='px-[77px] py-[61px]'>
+              <Button
+                buttonText='Continue to Checkout'
+                className='bg-dark-yellow w-[647px] text-navy-blue'
+              />
+            </div>
+          </div>
+
+          {/* <div className='w-full max-w-sm p-8 bg-white '>
+            <h2 className='mb-4 text-xl font-bold bgdar'>Your Cart</h2>
+            <p className='mb-4 text-gray-700'>Modal content goes here.</p>
+            <div className='flex justify-end'>
+              <Button
+                buttonText='Close'
+                className='text-white bg-red-500 hover:bg-red-600'
+                onClick={closeModal}
+              />
+            </div>
+          </div> */}
+        </div>
+      )}
     </div>
   );
 };

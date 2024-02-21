@@ -1,8 +1,11 @@
 import React from 'react';
 import { FaCircle } from 'react-icons/fa';
 import Button from '../../../ui/button';
+import { useNavigate } from 'react-router';
 
 const Author = ({ className }) => {
+  const navigate = useNavigate();
+
   const authorData = [
     {
       image: '/assets/landing/section1/atomicBook.png',
@@ -17,6 +20,10 @@ const Author = ({ className }) => {
         'Many variations of passages of Lorem Ipsum willing araise alteration in some form.',
     },
   ];
+
+  const navigateToStore = () => {
+    navigate('/store');
+  };
 
   return (
     <div className={`font-inter xl:px-[310px] xl:py-[145px] ${className}`}>
@@ -69,6 +76,7 @@ const Author = ({ className }) => {
                 <Button
                   buttonText='Order Today'
                   className='border-[1px] border-dark-yellow bg-white'
+                  onClick={() => navigateToStore()}
                 />
               </div>
             </div>

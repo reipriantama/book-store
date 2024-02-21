@@ -1,7 +1,10 @@
 import React from 'react';
 import Button from '../../../ui/button';
+import { useNavigate } from 'react-router';
 
 const StoreCard = () => {
+  const navigate = useNavigate();
+
   const cardData = [
     {
       image: '/assets/store/section1/atomicBook.png',
@@ -47,6 +50,10 @@ const StoreCard = () => {
     },
   ];
 
+  const navigateToDetail = () => {
+    navigate('/detail-product');
+  };
+
   return (
     <div
       className='font-inter 
@@ -85,6 +92,7 @@ const StoreCard = () => {
               <Button
                 buttonText='Order Today'
                 className='border-[1px] border-dark-yellow'
+                onClick={() => navigateToDetail()}
               />
             </div>
           </div>

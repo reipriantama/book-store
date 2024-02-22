@@ -1,15 +1,8 @@
 import React from 'react';
 import Button from '../../../ui/button';
 import { FaCircle } from 'react-icons/fa';
-import { useNavigate } from 'react-router';
 
 const Hero = () => {
-  const navigate = useNavigate();
-
-  const navigateToStore = () => {
-    navigate('/store');
-  };
-
   const itemHero = [
     {
       title: 'Pages',
@@ -53,7 +46,7 @@ const Hero = () => {
               <Button
                 buttonText='Order Today'
                 className='text-black bg-dark-yellow'
-                onClick={navigateToStore}
+                href={'/store'}
               />
             </div>
             <div className='flex items-center underline font-cardo text-[19px]'>

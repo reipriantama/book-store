@@ -37,7 +37,7 @@ const routes = [
         element: <BlogPage />,
       },
       {
-        path: 'detail-blog',
+        path: 'detail-blog/:blogId',
         element: <DetailBlogPage />,
       },
     ],

@@ -25,7 +25,7 @@ const routes = [
         element: <StorePage />,
       },
       {
-        path: 'detail-product',
+        path: 'detail-product/:bookId',
         element: <DetailProduct />,
       },
       {

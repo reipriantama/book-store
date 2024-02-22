@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/store/section1/atomicBook.png",
+    "title": "Atomic One’s",
+    "price": 23.89,
+    "description": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form."
+  },
+  {
+    "id": 2,
+    "image": "/assets/store/section1/lightBook.png",
+    "title": "Anatomic Habits",
+    "price": 23.54,
+    "description": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form."
+  },
+  {
+    "id": 3,
+    "image": "/assets/store/section1/atomicBook.png",
+    "title": "Quichotte",
+    "price": 22.43,
+    "description": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form."
+  },
+  {
+    "id": 4,
+    "image": "/assets/store/section1/lightBook.png",
+    "title": "The Sweetest Fruits",
+    "price": 34.52,
+    "description": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form."
+  },
+  {
+    "id": 5,
+    "image": "/assets/store/section1/atomicBook.png",
+    "title": "Educated",
+    "price": 32.43,
+    "description": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form."
+  },
+  {
+    "id": 6,
+    "image": "/assets/store/section1/lightBook.png",
+    "title": "Light Book",
+    "price": 42.23,
+    "description": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form."
+  }
+]

@@ -1,57 +1,13 @@
 import React from 'react';
 import Button from '../../../ui/button';
 import { useNavigate } from 'react-router';
+import BookData from '../../../../data/BookData.json';
 
 const StoreCard = () => {
   const navigate = useNavigate();
 
-  const cardData = [
-    {
-      image: '/assets/store/section1/atomicBook.png',
-      title: 'Atomic One’s',
-      price: '23.89',
-      description:
-        'Many variations of passages of Lorem Ipsum willing araise  alteration in some form.',
-    },
-    {
-      image: '/assets/store/section1/lightBook.png',
-      title: 'Anatomic Habits',
-      price: '25.34',
-      description:
-        'Many variations of passages of Lorem Ipsum willing araise  alteration in some form.',
-    },
-    {
-      image: '/assets/store/section1/atomicBook.png',
-      title: 'Quichotte',
-      price: '22.43',
-      description:
-        'Many variations of passages of Lorem Ipsum willing araise  alteration in some form.',
-    },
-    {
-      image: '/assets/store/section1/lightBook.png',
-      title: 'The Sweetest Fruits',
-      price: '34.52',
-      description:
-        'Many variations of passages of Lorem Ipsum willing araise  alteration in some form.',
-    },
-    {
-      image: '/assets/store/section1/atomicBook.png',
-      title: 'Educated',
-      price: '32.43',
-      description:
-        'Many variations of passages of Lorem Ipsum willing araise  alteration in some form.',
-    },
-    {
-      image: '/assets/store/section1/lightBook.png',
-      title: 'Light Book',
-      price: '43.23',
-      description:
-        'Many variations of passages of Lorem Ipsum willing araise  alteration in some form.',
-    },
-  ];
-
-  const navigateToDetail = () => {
-    navigate('/detail-product');
+  const navigateToDetail = (id) => {
+    navigate(`/detail-product/${id}`);
   };
 
   return (
@@ -60,7 +16,7 @@ const StoreCard = () => {
     xl:px-[310px] xl:pt-[150px]'
     >
       <div className='grid grid-cols-3 gap-[50px]'>
-        {cardData.map((item, index) => (
+        {BookData.map((item, index) => (
           <div key={index} className='w-[401px]'>
             <div>
               <img
@@ -92,7 +48,7 @@ const StoreCard = () => {
               <Button
                 buttonText='Order Today'
                 className='border-[1px] border-dark-yellow'
-                onClick={() => navigateToDetail()}
+                onClick={() => navigateToDetail(item.id)}
               />
             </div>
           </div>

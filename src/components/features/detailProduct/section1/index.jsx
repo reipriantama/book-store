@@ -1,30 +1,51 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from '../../../ui/button';
 import { PiShoppingCartSimple } from 'react-icons/pi';
 import { IoMdClose } from 'react-icons/io';
+import BookData from '../../../../data/BookData.json';
 
-const DetailBook = () => {
+const DetailBook = (props) => {
+  const { id } = props;
+  const [book, setBook] = useState();
+  const [quantity, setQuantity] = useState(1);
   const [showCartModal, setShowCartModal] = useState(false);
+
+  useEffect(() => {
+    const fetchBook = async () => {
+      try {
+        const selectedBook = BookData.find((item) => item.id === parseInt(id));
+        setBook(selectedBook);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchBook();
+  }, [id]);
 
   const closeModal = () => {
     setShowCartModal(false);
+  };
+
+  const calculateSubtotal = () => {
+    if (!book) return 0;
+    return quantity * parseFloat(book.price);
   };
 
   return (
     <div className='font-inter xl:px-[310px] xl:pt-[150px] xl:pb-[120px] flex justify-center'>
       <div className='mr-[86px]'>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/store/section1/atomicBook.png`}
+          src={`${process.env.PUBLIC_URL}${book?.image}`}
           alt='book'
           className='w-[580px] h-[650px]'
         />
       </div>
       <div className='w-[635px] flex flex-col justify-center'>
         <div className='font-bold font-cardo text-[32px] text-navy-blue'>
-          The Atomic One’s
+          {book?.title}
         </div>
         <div className='font-extrabold text-[30px] text-dark-yellow mb-[26px]'>
-          $30.00 USD
+          {book?.proce}
         </div>
         <div className='text-thin-grey text-[19px] mb-5'>
           Making this the first true generator on the Internet. It uses a
@@ -49,9 +70,11 @@ const DetailBook = () => {
           </ul>
         </div>
         <div className='flex gap-[10px]'>
-          <Button
-            buttonText='1'
-            className='border-[1px] border-dark-yellow text-navy-blue'
+          <input
+            type='number'
+            onChange={(e) => setQuantity(e.target.value)}
+            placeholder='1'
+            className='border-[1px] border-dark-yellow text-navy-blue text-center w-[120px]'
           />
           <Button
             buttonText='Add to Cart'
@@ -72,27 +95,28 @@ const DetailBook = () => {
                 className='cursor-pointer size-10'
               />
             </div>
-
             <div className='flex justify-between px-[76px]'>
               <div className='flex'>
                 <img
-                  src={`${process.env.PUBLIC_URL}/assets/store/section1/atomicBook.png`}
+                  src={`${process.env.PUBLIC_URL}${book?.image}`}
                   alt='book'
                   className='w-[133px] h-[178px] mr-[38px]'
                 />
                 <div>
                   <div className='font-bold font-cardo text-[24px]'>
-                    Atomic One’s
+                    {book?.title}
                   </div>
                   <div className='text-thin-grey text-[20px] mb-[44px]'>
-                    $30.00 USD
+                    ${book?.price} USD
                   </div>
                   <div className='font-bold font-cardo text-[35px]'>Remove</div>
                 </div>
               </div>
               <input
                 type='number'
-                className='border-[1px] border-[#E8E8E8] w-[120px] h-[62px] text-thin-grey text-[20px] '
+                onChange={(e) => setQuantity(e.target.value)}
+                placeholder={quantity.toString()}
+                className='border-[1px] border-[#E8E8E8] w-[120px] h-[62px] text-thin-grey text-[20px] text-center'
               />
             </div>
             <div className='border-t-[1px] border-navy-blue mt-[65px] mb-[25px]'></div>
@@ -101,7 +125,7 @@ const DetailBook = () => {
                 Sub-Total
               </div>
               <div className='font-bold text-navy-blue text-[24px]'>
-                $ 60.00 USD
+                $ {calculateSubtotal().toFixed(2)} USD
               </div>
             </div>
             <div className='px-[77px] py-[61px]'>
@@ -111,18 +135,6 @@ const DetailBook = () => {
               />
             </div>
           </div>
-
-          {/* <div className='w-full max-w-sm p-8 bg-white '>
-            <h2 className='mb-4 text-xl font-bold bgdar'>Your Cart</h2>
-            <p className='mb-4 text-gray-700'>Modal content goes here.</p>
-            <div className='flex justify-end'>
-              <Button
-                buttonText='Close'
-                className='text-white bg-red-500 hover:bg-red-600'
-                onClick={closeModal}
-              />
-            </div>
-          </div> */}
         </div>
       )}
     </div>

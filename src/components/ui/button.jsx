@@ -11,7 +11,7 @@ const Button = ({ className, buttonText, iconButton, onClick, href }) => {
           to={href}
         >
           {iconButton}
-          <div>{buttonText}</div>
+          <span>{buttonText}</span>
         </Link>
       ) : (
         <button
